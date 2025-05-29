@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+div,
+span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+img{width: 100%;}
+
+a:hover {
+    color: var(--color-main);
+}
+
+:root {
+    --color-yellow: #dcba3f;
+    --color-red: #da1d19;
+    --color-medium-red: #cc2c32;
+    --color-main: #ee9805;
+    --color-dark-red: #c31829;
+    --color-green: #28a745;
+    --color-white: #ddd6d5;
+    --color-black: #212529;
+    --color-gray: #6c757d;
+}
+
+body {
+    max-width: 1366px;
+    margin: auto;
+    background-color: white
+}
+
+/* Font chu */
+@font-face {
+    font-family: 'Fz Poppins Regular';
+    src: url('font/FzPoppins-Regular.eot');
+    src: url('font/FzPoppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/FzPoppins-Regular.woff2') format('woff2'),
+        url('font/FzPoppins-Regular.woff') format('woff'),
+        url('font/FzPopfont/pins-Regular.ttf') format('truetype'),
+        url('font/FzPoppins-Regular.svg#FzPoppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fz Poppins Light';
+    src: url('font/FzPoppins-Light.eot');
+    src: url('font/FzPoppins-Light.eot?#iefix') format('embedded-opentype'),
+        url('font/FzPoppins-Light.woff2') format('woff2'),
+        url('font/FzPoppins-Light.woff') format('woff'),
+        url('font/FzPoppins-Light.ttf') format('truetype'),
+        url('font/FzPoppins-Light.svg#FzPoppins-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fz Poppins Med';
+    src: url('font/FzPoppins-Medium.eot');
+    src: url('font/FzPoppins-Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/FzPoppins-Medium.woff2') format('woff2'),
+        url('font/FzPoppins-Medium.woff') format('woff'),
+        url('font/FzPoppins-Medium.ttf') format('truetype'),
+        url('font/FzPoppins-Medium.svg#FzPoppins-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fz Poppins SemBd';
+    src: url('font/FzPoppins-SemiBold.eot');
+    src: url('font/FzPoppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('font/FzPoppins-SemiBold.woff2') format('woff2'),
+        url('font/FzPoppins-SemiBold.woff') format('woff'),
+        url('font/FzPoppins-SemiBold.ttf') format('truetype'),
+        url('font/FzPoppins-SemiBold.svg#FzPoppins-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*@font-family: "Sansita Swashed", system-ui;*/
+.center-1185 {
+    padding: 0 92px;
+    margin: 0;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0px 0px 0px 0px;
+}
+.nav-menu {
+    width: 52.1591%;
+    padding: 13px 0 0 0px;
+}
+
+.nav-menu a {color: white;text-decoration: none;text-transform: uppercase;font-size: 15px;font-family: 'Fz Poppins Light';font-weight: 300px;}
+menu {
+    height: 100px;
+    background-color: #351d13;
+}
+.nav-menu a:hover {
+    color: #e8c72d;
+    transition: all 0.3s ease;
+}
+
+.img-slide img {width: 100%;object-fit: cover;max-height: 672px;}
+.content-slide span {color: #eacc42;font-family: 'Fz Poppins Light';font-weight: 300;font-size: 11px;display: block;margin: 0 0 3px;padding-left: 53px;position: relative;letter-spacing: 2px;}
+.text-slide {font-size: 30px;font-weight: 400;display: block;margin: 0 0 -3px;font-family: "Gotu", sans-serif;line-height: 48px;}
+.content-slide {position: absolute;bottom: 118px;color: #fff;left: 7%;/*margin: 0px 0px -22px 0px;*/}
+#slideshow {
+    position: relative;
+}
+
+/* nÃºt mÅ©i tÃªn*/
+
+p.text-slide2 {color: #dad9d9;font-weight: 300;font-family: 'Fz Poppins Light';font-size: 13px;line-height: 23px;margin: 0 0 0 3px;}
+.content-slide span:before {position: absolute;width: 40px;height: 1px;background: #eacc42;left: 0;top: 50%;transform: translateY(-50%);}
+/* mũi tên*/
+.background-slide{
+    position: relative;
+}
+.slide-arrow {position: absolute;top: 50%;width: 100%;transform: translateY(-50%);list-style: none;display: flex;align-items: center;justify-content: space-between;transition: all 0.3s ease;}
+.arrow-left {margin-left: 28px;}
+.arrow-right {margin-right: 32px;}
+.side-arrow :hover {opacity: 0.5;}
+.title-sp h2 {font-family: "Fz Poppins SemBd", system-ui;}
+.center-1120 {margin: auto;max-width: 1150px;position: relative;padding: 0 15px;}
+.title-sp {text-align: center;position: relative;}
+.title-sp h2 {font-size: 36px;text-transform: capitalize;margin-bottom: 21px;}
+.danhmucsp {
+    position: relative;
+    padding: 36px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.main-categories {
+    text-align: center;
+    /* padding-top: 54px;
+    padding-bottom: 30px; */
+    position: relative;
+}
+
+.categories h2 {
+    font-family: 'Fz Poppins SemBd';
+}
+
+.img-categories {
+    position: relative;
+}
+
+.img-categories::after {content: '';position: absolute;width: 95%;height: 95%;border: 0.1px solid #e8b51c6b;top: 0;left: 0px;bottom: 0;right: 0px;margin: auto;opacity: 1}
+.img-categories:hover::after {opacity: 1}
+.content-categories {position: absolute;bottom: 15px; ;left: 0;right: 0;}
+.content-categories p,
+.content-categories span {display: none;}
+.content-categories span img {width: 100px;}
+.img-categories:hover .content-categories {display: flex;top: 0;bottom: 0;justify-content: center;align-items: center;background-color: #611b0ede;}
+.img-categories:hover .content-categories p {display: block;}
+.img-categories:hover .content-categories span {display: block;}
+.name-categories {font-size: 18px;font-family: 'Fz Poppins Med';color: white;text-transform: uppercase;}
+.img-categories:hover .content-categories p {color: var(--color-yellow);}
+.img-categories:hover .name-categories {color: var(--color-yellow);margin-bottom: -3px;}
+.categories-background {position: relative;padding: 80px 20px 40px;}
+.categories-background img.background-img {position: absolute;top: 10%;left: 50%;transform: translateX(-50%);width: 100%;height: auto;z-index: 1;object-fit: cover;}
+.product-box {display: flex;justify-content: space-between;flex-wrap: wrap;gap: 24px;}
+.product-card {width: 100%;max-width: 360px;background-color: #fff;box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);overflow: hidden;transition: transform 0.3s ease;text-align: left;}
+.product-card:hover {transform: translateY(-5px);}
+.product-card img {width: 100%;object-fit: cover;}
+.product-card h3 {font-size: 14px;margin: 16px 20px 0;color: #f59e0b;}
+.product-card .price {font-size: 16px;font-weight: bold;color: #1f2937;margin: 8px 20px;transition: color 0.3s ease;}
+.product-card .price:hover {color: #ee9805;cursor: pointer;}
+.product-card .old-price {display: block;margin-top: 10px;font-size: 14px;font-weight: normal;color: #6b7280;}
+.product-card {border: none;box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);padding: 0;border-radius: 0;text-align: left;padding: 10px;}
+.product-box {padding-bottom: 30px;margin: -10px;}
+.discount-badge {font-family: 'Fz Poppins Light';position: absolute;background-color: #f39c12;color: white;padding: 5px;font-size: 10px;top: 10px;right: 10px;z-index: 2;text-align: center;min-width: 41px;height: 22px;justify-content: center;align-items: center;display: flex;}
+/*nút xem san pham*/
+
+.view-all button {background-color: #f97316;color: #fff;border: none;padding: 18px 45px;font-size: 16px;font-weight: bold;border-radius: 25px;cursor: pointer;transition: background-color 0.2s;}
+.content-service p strong {
+    font-family: 'Fz Poppins Med';
+    color: black;
+}
+
+.content-service:hover p strong {
+    color: #ee9805
+}
+
+.center-1120 {margin: auto;max-width: 1148px;position: relative;padding: 0 15px;}
+
+.title-sp {
+    text-align: center;
+    position: relative;
+}
+
+.title-sp h2 {
+    font-size: 36px;
+    text-transform: capitalize;
+    margin-bottom: 21px;
+}
+
+.danhmucsp {
+    position: relative;
+    padding: 36px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.categories h2 {
+    font-family: 'Fz Poppins SemBd';
+}
+
+.name-categories:hover {
+    color: #eacc42;
+}
+
+.categories-background {
+    position: relative;
+    padding: 80px 20px 40px;
+}
+
+.categories-background img.background-img {position: absolute;top: 10%;left: 50%;transform: translateX(-50%);width: 100%;height: auto;z-index: 1;object-fit: cover;}
+.center-1122 {max-width: 1122px;margin: auto;padding: 0 15px;}
+.categories {background-image: url(img/bck-product-453.png);background-position: center 54%;background-repeat: no-repeat;background-color: #f9f9f9;}
+.main-categories {padding: 50px 0 60px;}
+.wrap-categories {display: flex;flex-wrap: wrap;margin:0 -10px;align-items: center;justify-content: center;}
+.box-categories {padding: 10px;max-width: calc(100% / 3);width: 100%;}
+.title-main h2 {font-family: "Sansita Swashed", system-ui;font-size: 36px;text-align: center;font-weight: 650;margin-bottom: 19px;}
+.title-main p {font-family: 'Fz Poppins Light';font-size: 14px;margin: auto;max-width: 834px;padding: 0 0 25px 0;}
+.product-box {display: flex;justify-content: space-between;flex-wrap: wrap;gap: 24px;}
+.product-card {width: 100%;max-width: 360px;background-color: #fff;box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);overflow: hidden;transition: transform 0.3s ease;text-align: left;}
+.product-card:hover {transform: translateY(-5px);}
+.product-card img {width: 100%;object-fit: cover;}
+.product-card h3 {font-size: 14px;margin: 16px 20px 0;color: #f59e0b;}
+.product-card .price {font-size: 16px;font-weight: bold;color: #1f2937;margin: 8px 20px;transition: color 0.3s ease;}
+.product-card .price:hover {  color: #ee9805;cursor: pointer;}
+.product-card .old-price {display: block;margin-top: 10px;font-size: 14px;font-weight: normal;color: #6b7280;}
+.view-all a {text-decoration: none;background: #ee9805;color: #fff;padding: 16px 42px;border-radius: 30px;display: inline-block;font-family: 'Fz Poppins Regular';}
+/* SÃ¡ÂºÂ£n phÃ¡ÂºÂ©m nÃ¡Â»â€¢i bÃ¡ÂºÂ­t */
+.featured-products {padding: 40px 20px;text-align: center;}
+.featured-products h2 {font-family: 'Fz Poppins';margin-bottom: 47px;margin-top: 20px;font-size: 35.99px;color: black;font-family: "Sansita Swashed", system-ui;}
+/* SÃ¡ÂºÂ£n PhÃ¡ÂºÂ©m */
+.main-product {
+    padding: 53px 0 61px;
+}
+
+.load-tab-product {
+    padding-bottom: 28px
+}
+
+.wrap-product-in {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.box-product-in {
+    max-width: calc(100% /4);
+    position: relative;
+    padding: 10px;
+}
+
+/* .box-product-sc {
+    width: calc(100% /3);
+    position: relative;
+    padding: 10px;
+} */
+
+.box-sanpham {
+    padding: 0px 10px;
+}
+
+.border-product {
+    border-radius: 10px;
+    border: 1px solid #f3f3f3;
+}
+
+.pic-product a {border-radius: 10px;}
+.pic-product img {width: 100%;}
+.content-product {padding: 17px 0 5px;}
+.name-product {font-size: 15px;line-height: 23px;/*margin: 7px -25px 0px -10px;*/font-family: 'Fz Poppins Light';text-align: left;}
+.price-product {margin: 6px 0px;display: flex;justify-content: start;align-items: center;flex-wrap: wrap;}
+.price-product span {font-family: 'Fz Poppins Med';}
+.price-new {font-size: 16px;font-weight: 500;color: var(--color-main);font-family: "Fz Poppins"}
+.price-old {padding-left: 20px;font-weight: 400 !important;color: #b4b4b4;   text-decoration: line-through;}
+.price-per {position: absolute;top: 15px;right: 15px;color: #fff;background: var(--color-red);font-size: 11px;border-radius: 2px;width: 45px;height: 25px;text-align: center;line-height: 25px;}
+.box-product-cart {display: none !important;font-size: 13px;}
+.box-product-cart span {cursor: pointer;width: 49%;color: #fff;text-transform: capitalize;text-align: center;padding: 7px 5px;border-radius: 3px;}
+.box-product-cart-add {margin-right: 2%;background-color: var(--color-red);}
+.box-product-cart-add:hover {background-color: var(--color-dark-red);}
+.box-product-cart-buy {background-color: var(--color-green);}
+.box-product-cart-buy:hover {background-color: var(--color-dark-green);}
+.abc {text-align: center;display: block;border-radius: 5px;background-color: #f8f8f8;line-height: 35px;font-family: 'Shopee Display 500';}
+.abc:hover {background-color: var(--color-main);color: black;}
+.title-product h2 {margin-bottom: 34px;font-family: "Sansita Swashed", system-ui;font-size: 36px;line-height: 1.4;text-align: center;font-weight: 650;}
+/* Hover: toÃƒÂ n bÃ¡Â»â„¢ chÃ¡Â»Â¯ Ã„â€˜Ã¡Â»â€¢i vÃƒÂ ng */
+.broder-product:hover .product-title,
+/* NÃƒÂºt xem tÃ¡ÂºÂ¥t cÃ¡ÂºÂ£ sÃ¡ÂºÂ£n phÃ¡ÂºÂ©m */
+.view-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+    /* margin-bottom: 15px;
+    color: black; */
+}
+
+.view-all button {
+    background-color: #f97316;
+    color: #fff;
+    border: none;
+    padding: 18px 45px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.view-all a {
+    text-decoration: none;
+    background: #ee9805;
+    color: #fff;
+    padding: 15px 44px;
+    border-radius: 50px;
+    display: inline-block;
+    font-family: 'Fz Poppins Regular';
+    font-size: 15px;
+}
+/* GiÃ¡Â»â€ºi thiÃ¡Â»â€¡u */
+#about {
+    position: relative;
+    color: white;
+    text-align: center;
+    background-image: url(img/bck-1366x430.png);
+}
+.content-about {width: 100%;margin: auto;max-width: 870px;padding:98px 15px 100px;}
+
+
+.content-about h2 {color: #f9c851;font-size: 40px;font-weight: bold;margin-bottom: 20px;font-family: "Sansita Swashed", system-ui;}
+
+.content-p {
+    font-family: 'Fz Poppins Light';
+}
+
+.about-content h2 {
+    font-family: "Sansita Swashed", system-ui;
+}
+
+.content-p,
+.about-content {
+    line-height: 24px;
+    margin: 34px 0px 29px 0px;
+}
+
+.about-content {
+    font-family: "Sansita Swashed", system-ui;
+    font-size: 16px;
+}
+
+/* Blog */
+.blog-section {
+    padding: 40px 20px;
+}
+
+.blog-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.blog-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    background: #f9f9f9;
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-card h4 {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.blog-card p {
+    padding: 0 10px 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+/*footer*/
+strong {
+    font-weight: bolder;
+    font-family: 'Fz Poppins SemBd';
+    color: #ffffff;
+}
+
+#footer {
+    background-color: #570e01;
+    padding: 50px 0 0;
+}
+
+.footer-top {color: #d5c3c0;padding: 4px 0 42px;}
+
+
+.center {
+    position: relative;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-1 {max-width: 330px;right: 0 auto;position: relative;padding: 0 px;}
+.footer-2{/*margin: 0 0 0 -10px;*/padding-left: unset;}
+.footer-3 {width: 296px;}
+.footer-4 {width: 300px;}
+.footer-tit {font-weight: 600;text-transform: capitalize;font-size: 14px;margin: 0 0 25px;position: relative;font-family: 'Fz Poppins SemBd';color: #ffffff}
+.footer-tit:after {content: '';position: absolute;bottom: -5px;left: 0;width: 32px;height: 1px;background-color: var(--color-white);}
+.footer-content {line-height: 27px;}
+.footer-content p {margin: 0;font-family: 'Fz Poppins Regular';font-size: 14px;}
+.footer-content ul {margin: 20px 0 0 0px;/*max-width: 330px;*/list-style-type: none;padding: 0;display: flex;gap: 7px}
+.footer-bottom {font-family: 'Fz Poppins Regular';background-color: #3a0b03;padding: 9px 0;text-align: center;font-size: 14px;}
+.footer-bottom a {color: #cabebc;font-family: 'Fz Poppins SemBd';font-size: 13px;}
+.footer-list {list-style: none;/*padding: 0px;margin: 0px;*/line-height: 20px;}
+.footer-2 ul {padding-left: unset;}
+.footer-list li {margin-bottom: 5px;}
+.footer-list li:last-child {margin-bottom: 0px;}
+.footer-list li a {color: #ddcfcc;font-size: 14px;font-family: 'Fz Poppins Regular';}
+.footer-list li a:hover {color: var(--color-yellow);}
+.copyright {margin: 0;font-size: 13px;color: whitesmoke;} 
+.copyright span {font-family: 'Fz Poppins Regular';}
+.statistic {list-style: none;margin: 0;padding: 0;}
+.statistic span {margin: 0 10px;}
+.statistic span:last-child {padding-right: 0px;}
+#footer-map iframe {display: block;width: 100%;max-height: 234px;}
+#server {
+        /* background: #fff;
+        padding: 26px 0;
+        font-family: 'Fz Poppins SemBd'; */
+}
+.center-1220 {
+    position: relative;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.main-service {padding: 50px 0 58px;}
+
+.title-server h2 {font-size: 35px;font-weight: 600;text-align: center;font-family: "Sansita Swashed", system-ui;margin-bottom: 32px;}
+.slick-service {display: flex;flex-wrap: wrap;margin: -10px;}
+.box-service {max-width: calc(100% / 3);position: relative;padding: 10px;}
+.border-service {display: flex;flex-direction: column;height: 100%;}
+.border-service {box-shadow: 0 0 10px #ebedf0;border-radius: 10px;}
+.border-service:hover {box-shadow: 0 0 10px #ccc;}
+.img-service {flex: 0 0 auto;max-width: 100%; width: 100%;}
+.img-service img {object-fit: cover;border-radius: 10px 10px 0 0;width: 100%;}
+.content-service {display: block;line-height: 21px;padding: 19px 27px 26px;}
+.content-service h3 {font-size: 15px;line-height: 24px;font-family: 'Fz Poppins Med';height: 52px;}
+.content-time {color: #ee9805;font-family: 'Fz Poppins Light';font-size: 13px;line-height:  20px;; margin: 0 0 7px;}
+.des-service{font-family: 'Fz Poppins Light';font-size: 13px;color: #929292;margin-bottom: -5px;}
+
+/* Text Hide */
+.text-split { overflow: hidden; text-overflow: ellipsis; white-space: normal; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 4; } 
+.text-split.text-split-1 { -webkit-line-clamp: 1; } 
+.text-split.text-split-2 {-webkit-line-clamp: 2;font-family: 'Fz Poppins Med';} 
+.text-split.text-split-3 { -webkit-line-clamp: 3; } 
+.text-split.text-split-4 { -webkit-line-clamp: 4; } 
+.text-split.text-split-5 { -webkit-line-clamp: 5; } 
+
+
+/*media*/
+
+
+
