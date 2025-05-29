@@ -1,0 +1,61 @@
+@media (max-width: 991px) {
+    .nav-menu {display: none;}
+    .flex {flex-direction: column;}
+    .content-slide {display: none;}
+    .main-categories {padding: 30px 0;}
+    .discount-badge {top: 5px;right: 5px;}
+    .box-categories {width: calc(100% / 3);padding: 5px;}
+    .wrap-categories {margin: -5px;}
+    .wrap-product-in {display: flex;flex-wrap: wrap;margin: -5px;}
+    .box-product-in {max-width: calc(100% / 4);position: relative;padding: 5px;}
+    .title-main h2 {font-size: 36px;font-weight: bold;}
+    .slick-service {margin: -5px;}
+}
+@media (max-width: 767px) {
+    .title-main h2 {font-size: 36px;}
+    .box-product-in {max-width: calc(100% / 3);}
+    .box-categories {width: calc(100% / 3);}
+    .footer-top .center {flex-direction: column;gap: 20px;}
+    .footer-1,
+    .footer-2,
+    .footer-3,
+    .footer-4 { width: 100%;margin: 0;}
+    .name-categories {font-size: 14px;font-family: 'Fz Poppins Med';color: white;text-transform: uppercase;}
+    .content-categories {position: absolute;bottom: 3px;left: 0;right: 0;}
+    .content-about h2 {margin: 0 0 14px 0;font-size: 25px;}
+    .content-p, .about-content {line-height: 24px;margin: 34px 0px 29px 0px;font-size: 14px;}
+    .content-p {font-family: 'Fz Poppins Light';}
+    .slick-service {margin: -5px;}
+    .box-service {max-width: calc(100% / 2);position: relative;padding: 5px;}
+    .title-server h2 {font-size: 35px;font-weight: 600;text-align: center;font-family: "Sansita Swashed", system-ui;margin-bottom: 30px;}
+    .main-service {padding: 25px 0 58px;}
+    .content-time{font-size: 13px;}
+    .text-split.text-split-2{font-size: 16px;}
+    .text-split.text-split-3{font-size: 13px;}
+    .name-product {font-size: 15px;}
+    .price-new, .price-old{font-size: 14px;}
+.view-all a{
+padding: 15px 25px;font-size: 15px;margin: 25px 0 0;}
+
+}
+@media (max-width: 480px) {
+    .title-main p {font-size: 12px;}
+    .title-main h2 {font-size: 30px;}
+    .box-product-in {max-width: calc(100% / 2);}
+    .box-categories {width: calc(100% / 2);max-width: calc(100% / 2);position: relative;padding: 5px;}
+    .footer-top .center {flex-direction: column;gap: 20px;}
+    .name-categories {font-size: 14px;}
+    .content-categories {position: absolute;bottom: 3px;left: 0px;right: 0;padding: 0 10px 0 10px;}
+    .content-about h2 {margin: -2px 0 -12px 0px;font-size: 21px;}
+    .content-p, .about-content {line-height: 24px;margin: 34px 0px 29px 0px;font-size: 14px;}
+    .slick-service {margin: -5px;}
+    .box-service {max-width: calc(100% / 1);position: relative;padding: 5px;}
+    .title-server h2 {font-size: 27px;font-weight: 600;text-align: center;margin-bottom: 25px;}
+    .main-service {padding: 25px 0 58px;}
+    .img-categories:hover .content-categories p {display: block;font-size: 12px;}
+    .price-new, .price-old {font-size: 14px;} 
+    .content-time{font-size: 13px;}
+    .broder-product:hover .product-title, .view-all {display: flex;justify-content: center;margin-top: 15px;color: black;}
+     .view-all a {padding: 9px 3px;font-size: 14px;}
+}
+    
